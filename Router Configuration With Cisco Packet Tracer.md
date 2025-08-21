@@ -9,7 +9,7 @@ After I opened Cisco Packet Tracer, I created general router and two host comput
 
 Configurations for the router were: 
 
-Interface GigabitEthernet 0/1 - 192.168.10.1 255.255.255.0
+Interface GigabitEthernet 0/0 - 192.168.10.1 255.255.255.0
 
 Interface GigabitEthernet 0/2 - 192.168.20.2 255.255.255.0
 
@@ -19,3 +19,23 @@ Interface GigabitEthernet 0/2 - 192.168.20.2 255.255.255.0
 ##Interfaces status after configuration
 <img width="706" height="710" alt="image" src="https://github.com/user-attachments/assets/8121fd77-b80d-4f26-9a19-0705ab5f28a6" />
 
+After Configuring setting for the router I configured both host devices with the following settings:
+
+PC1:
+- IPv4 192.168.20.2
+- Subnet Mask 255.255.255.0
+- DW 192.168.20.1
+
+PC2:
+- IPv4 192.168.10.2
+- Subnet Mask 255.255.255.0
+- DW 192.168.10.1
+
+After setting host setting I conducted ping test from the router and from the hosts to check networks operability. Everything worked fine as expected in straigh connection.
+
+Finaly I opened the router and checked its Route table. 
+
+##Routers routing table
+<img width="688" height="185" alt="image" src="https://github.com/user-attachments/assets/62639dd3-8883-4112-88a9-6aea65f38e09" />
+
+  
