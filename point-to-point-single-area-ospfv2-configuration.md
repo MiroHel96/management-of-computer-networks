@@ -66,9 +66,30 @@ Now we can configure networks and wildcard for OSPF Routing using the following 
  The process looks like this:
  <img width="698" height="710" alt="image" src="https://github.com/user-attachments/assets/ba1f3a07-d421-4bdf-a4da-065f7b2b3dab" />
 
+Example from R3:
+<img width="663" height="265" alt="image" src="https://github.com/user-attachments/assets/8e7b1fc5-4d02-4fc6-b639-34667478827b" />
+
 
  
+# Verifying that OSPF has been configure properly.
+
+After each router is configured, you can use the following command to verify OSPF has been configured.
+
+<img width="368" height="101" alt="image" src="https://github.com/user-attachments/assets/03bc9d3a-a7f8-4ea1-bdb0-6ba95c125510" />
+
+Show running configuration in the router CLI and find section that start with the text "router ospf (your ospf id)".
 
 
+# Configure networks for OSPF routing using interface IP addresses and quad-zero masks.
 
+I did everything in advance so I deleted ospf configurations from R2 and R3. I had to use different methods in the excersices.
+
+Configuring router using quad zero wildcard mask specifies the router to use exact interface IPv4 address. The advantage is that no wildcard calculation is required. In all cases area argument will be 0. 
+
+<img width="639" height="155" alt="image" src="https://github.com/user-attachments/assets/7ae81af8-8821-4485-8c1a-5706eef54c15" />
+
+
+# Configure OSPF routing on router interfaces 
+
+For router 3 I configured OSPF directly on the interface. 
 
