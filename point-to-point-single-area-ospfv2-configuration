@@ -1,1 +1,28 @@
+# Point-to-Point Single-Area OSPFv2 Configuration
+
+In this report I configure Single-Area OSPFv2 and I do the following.:
+
+- Configure Router IDs
+- Configure Networks for OSPF Routing
+- Configure Passive Interfaces 
+- Verify OSPF configuration
+
+
+# Configure Router IDs
+
+To configure router IDs you must use following commands in the configuration mode. 
+
+"router ospf process-id" - this command starts OSPFv2 routing process in Cisco devices. 
+Router ID is a 32-bit value represented as an IPv4 address. It can be assigned automatically by router.
+
+Router which has OSPF enabled with ID does the following 
+- Participate in the synchronization of OSPF databases
+- Participate in the election of the designated router (DR) 
+
+I configured process id of 10 for all of the routers in the example. After I had this done I configured the following IDs for each router:
+- R1 1.1.1.1
+- R2 2.2.2.2
+- R3 3.3.3.3
+
+router-id ridd - command assigns the router ID 
 
