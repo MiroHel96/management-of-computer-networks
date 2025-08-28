@@ -112,6 +112,31 @@ After configuring each interface I verified that the interfaces were configure c
 <img width="656" height="410" alt="image" src="https://github.com/user-attachments/assets/411fbe85-e30c-457b-9821-6103b570881d" />
 
 
+## Configure Passive Interfaces
+
+By default all OSPF messages are forwarded out all OSPF-enabled interfaces. These messages should be only sent to interfaces that are connecting other OSPF-enabled routers. Why?`
+
+Unneedeed messages affect LAN networks performance:
+Inefficent Use of Bandwidth
+Inefficent Use of Resources
+Increased Security Risk 
+
+Passive interfaces can be configured on Cisco defices using the following command passive-interface in the routers configuration mode. 
+
+After configuration you can use "show ip protocols" -command to verify interface is listed as passive. 
+
+In this example I need to configure each routers Gigabit -interface with the passive-interface command. This will disable OSPF messages in oter interfaces which do not need to receive OSPF messages. 
+
+
+<img width="669" height="58" alt="image" src="https://github.com/user-attachments/assets/1355999f-dc7e-43a6-9212-ac144a0f4347" />
+
+As here is shown the GigabitEthernet -interface is listed as a passive interface. 
+
+<img width="661" height="293" alt="image" src="https://github.com/user-attachments/assets/c47c0571-37fe-4915-ac67-a5594bf6bd11" />
+
+
+
+
 
 
 
