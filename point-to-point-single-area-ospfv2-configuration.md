@@ -137,6 +137,13 @@ As here is shown the GigabitEthernet -interface is listed as a passive interface
 
 And there you go, I have now configured Point-to-Point Single-Area OSPFv2 on a network consisting of Cisco devices.
 
+Material and excersise from: 
+https://hhmoodle.haaga-helia.fi/pluginfile.php/4332632/mod_resource/content/1/2.2.13%20Packet%20Tracer%20-%20Point-to-Point%20Single-Area%20OSPFv2%20Configuration.pdf
+https://hhmoodle.haaga-helia.fi/pluginfile.php/4332629/mod_resource/content/5/ENSA_Module_2-v1.1.pdf
+
+
+
+
 
 
 
