@@ -88,8 +88,33 @@ Configuring router using quad zero wildcard mask specifies the router to use exa
 
 <img width="639" height="155" alt="image" src="https://github.com/user-attachments/assets/7ae81af8-8821-4485-8c1a-5706eef54c15" />
 
+After configuration I verifiend R2 has the correct configuration for OSPF
+
+<img width="660" height="115" alt="image" src="https://github.com/user-attachments/assets/a1e9a7c0-af29-438e-9a7c-878b34e96ca7" />
+
+
 
 # Configure OSPF routing on router interfaces 
 
 For router 3 I configured OSPF directly on the interface. 
+
+Router 3 has the following interaces: 
+<img width="621" height="79" alt="image" src="https://github.com/user-attachments/assets/9d4d3c2f-a5db-4ecd-8291-a27a7b2c7269" />
+
+To configure OSPF directly to the interfaces I use command 
+
+ip ospf process-id area area-id
+
+<img width="656" height="93" alt="image" src="https://github.com/user-attachments/assets/c4296d3d-f8da-4006-940a-721815f1eb63" />
+
+After configuring each interface I verified that the interfaces were configure correctly from the running configuration. 
+
+<img width="656" height="410" alt="image" src="https://github.com/user-attachments/assets/411fbe85-e30c-457b-9821-6103b570881d" />
+
+
+
+
+
+
+
 
