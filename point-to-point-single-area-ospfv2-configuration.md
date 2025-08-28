@@ -55,6 +55,20 @@ G0/0/0 255 - 0 = 0, Wildcard is 0.0.0.255
 
 S0/1/0 255 - 252 = 3, Wildcard is 0.0.0.3
 
-S0/1/1 255 - 252 = 3, Wildcard is 0.0.0.3
+S0/1/1 255 - 252 = 3, Wildcard is 0.0.0.3 
+
+I did the same calculations for R2 and R3 the results were identical. 
+
+Now we can configure networks and wildcard for OSPF Routing using the following command. 
+
+ network network-address wildcard-mask area area-id 
+
+ The process looks like this:
+ <img width="698" height="710" alt="image" src="https://github.com/user-attachments/assets/ba1f3a07-d421-4bdf-a4da-065f7b2b3dab" />
+
+
+ 
+
+
 
 
