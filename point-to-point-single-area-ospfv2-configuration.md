@@ -135,10 +135,7 @@ As here is shown the GigabitEthernet -interface is listed as a passive interface
 <img width="661" height="293" alt="image" src="https://github.com/user-attachments/assets/c47c0571-37fe-4915-ac67-a5594bf6bd11" />
 
 
-
-
-
-
+And there you go, I have now configured Point-to-Point Single-Area OSPFv2 on a network consisting of Cisco devices.
 
 
 
