@@ -39,6 +39,37 @@ RB 192.168.31.22 is FULL/BDR, so it is the Backup Designated Router.
 
 Finally RC 192.168.31.33 is FULL/DR, which indicates that it is the Designated Router. 
 
+# Turn on IP OSPF adjacency debugging.
+
+Before testing DB and DBR role changes, I have to turn on IP OSPPF adjacency debugging.
+
+I entered the following command to RA and RB "debug ip ospf adj".
+
+<img width="635" height="42" alt="image" src="https://github.com/user-attachments/assets/6e64b650-406b-4f21-9877-9bcd44f52815" />
+
+
+# Disable the GigabitEthernet0/0 interface on RB
+
+Next I disabled G0/0 interface on the RC by using the command "shutdown" in the interface configuration.
+
+<img width="699" height="652" alt="image" src="https://github.com/user-attachments/assets/48f7db51-ba77-48d4-b9a8-8c07b9da8038" />
+
+According to the debugging output, DR is not 192.168.31.22 which is RB nad BDR is now 192.168.31.11 and that is RA.
+
+<img width="812" height="531" alt="image" src="https://github.com/user-attachments/assets/7120ff66-87ce-4ace-a0fd-eb62f7d6154f" />
+
+# Restore G0/0 interface on RC
+
+After testing successfully role changes in DR and BDR I turned on the interface to revert the roles back to original routers. This simulation was a test if the router would lose its connection.
+
+<img width="631" height="132" alt="image" src="https://github.com/user-attachments/assets/daf54b9e-d426-4b60-97c4-a916ced03003" />
+
+Routers state returned back to normal. RB is now DR abd RA is the BDR.
+<img width="635" height="131" alt="image" src="https://github.com/user-attachments/assets/f7679d2f-01c8-4b83-9229-72a18c54698b" />
+
+
+
+
 # Part 2 Modify OSPF Priority and Force Elections 
 
  
