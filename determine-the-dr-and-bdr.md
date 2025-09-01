@@ -81,6 +81,7 @@ No my task was to modify OSPF priorities on each routher. Modification are done 
 OSPF priority can be modified with the following commnands:
  - ip ospf priority (router priority number)
 
+The priority number ranges from 0 to 255, higher number equals more change of becoming a DR. 0 means that the router will be never elected as a DR or BDR.
 RA: 200
 RB: 100
 RC: 1
@@ -90,6 +91,10 @@ RC: 1
 After configuring each router with new priorities I forced an election by resetting the OSPF process on each of the routers with command "clear ip ospf process".
 
 <img width="631" height="114" alt="image" src="https://github.com/user-attachments/assets/fced2864-aad8-4cc0-aa05-cc6e29976ef5" />
+
+Now the election process starts again and according the priorities which I set DR will be RA, BDR will be RB and RC will be an Drother. 
+
+
 
 
 
