@@ -67,9 +67,34 @@ After testing successfully role changes in DR and BDR I turned on the interface 
 Routers state returned back to normal. RB is now DR abd RA is the BDR.
 <img width="635" height="131" alt="image" src="https://github.com/user-attachments/assets/f7679d2f-01c8-4b83-9229-72a18c54698b" />
 
+After this I disabled G0/0 interface on router RB and investigatet how election worked according to RA debugging.
+RC was elected as BDR and RA was elected as a DR. After that I enabled RB interface and turned of debugging from RA and RB with command "undebug all".
 
+<img width="704" height="710" alt="image" src="https://github.com/user-attachments/assets/1ad7e054-c144-4fe1-8c42-161a49a5c279" />
 
+<img width="631" height="49" alt="image" src="https://github.com/user-attachments/assets/3b397b6b-9b59-4163-99c8-37ca81d78c06" />
 
 # Part 2 Modify OSPF Priority and Force Elections 
+
+No my task was to modify OSPF priorities on each routher. Modification are done in the interface G0/0.
+
+OSPF priority can be modified with the following commnands:
+ - ip ospf priority (router priority number)
+
+RA: 200
+RB: 100
+RC: 1
+
+<img width="631" height="141" alt="image" src="https://github.com/user-attachments/assets/119b6460-c681-4a55-8096-25c4c13772e2" />
+
+After configuring each router with new priorities I forced an election by resetting the OSPF process on each of the routers with command "clear ip ospf process".
+
+<img width="631" height="114" alt="image" src="https://github.com/user-attachments/assets/fced2864-aad8-4cc0-aa05-cc6e29976ef5" />
+
+
+
+
+
+
 
  
