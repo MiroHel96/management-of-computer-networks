@@ -64,3 +64,26 @@ The following network policies are implemented on R3:
 To restrict access from the 192.168.10.0/24 network to the 192.168.30/24 network without interfering with other traffic, an access list will need to be created on R3. The ACL must be placed on the outbound interface to PC3. A second rule must be created on R3 to permit all other traffic. - Cisco Packet Tracer.
 
 
+I started configuring R3 with the following commands: 
+ - R3(config)# access-list 1 deny 192.168.10.0 0.0.0.255 , denies traffic from configured IP address
+ - R3(config)# access-list 1 permit any , allows traffic from anywherere, excluding IP addresses mentioned in the ACL rule.
+ - show access-list, same as in R2 I verified my ACL rules. 
+
+<img width="705" height="713" alt="image" src="https://github.com/user-attachments/assets/cab95168-5325-4694-b5e6-60a0e896bd40" />
+
+Finally I applied R3 with the following commands:
+ - R3(config)# interface GigabitEthernet0/0
+ - R3(config-if)# ip access-group 1 out
+
+<img width="632" height="111" alt="image" src="https://github.com/user-attachments/assets/dfbda4cd-e1cd-42d1-a4db-3f180d59fc0a" />
+
+No I have configured standard ACLs for R2 and R3. 
+
+
+
+
+
+
+
+
+
