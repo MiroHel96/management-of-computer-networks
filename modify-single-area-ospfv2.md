@@ -59,4 +59,7 @@ After that I did traceroute again with PC1. As we can see the route changed from
 
 Finally I pinged each host from PC1 to verify connectivity, which was ok. Now I have modified OSPF hello and dead intervals and modified bandwidth to change router for packets in OSPF setup. 
 
+<img width="701" height="705" alt="image" src="https://github.com/user-attachments/assets/fe3b8560-6bed-46ca-a098-3610a30c8f1a" />
+
+
 
