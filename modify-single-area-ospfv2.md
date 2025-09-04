@@ -40,8 +40,23 @@ After configuration I waited for a while to get the acknowledgement that R1 and 
 
 # Adjusting the bandwidth settings on R1 
 
+I traced path from PC1 to Web Server located in network 64.100.1.2.
+- tracert 64.100.1.2
+
+  <img width="630" height="176" alt="image" src="https://github.com/user-attachments/assets/d01e60b9-98ec-4ae4-ae1b-9d8a3bd88ebc" />
+
+I configured R1 interface with speed of 64 KB/s. 
+
+<img width="638" height="98" alt="image" src="https://github.com/user-attachments/assets/7d0f040d-ec02-4418-a325-ef5e4be437c3" />
+
+After that I did traceroute again with PC1. As we can see the route changed from R1 to R2 to R1 to R3 and why? OSPF calculates the cost of each route and chooses the one which has least cost to deliver packet. 
+
+<img width="701" height="709" alt="image" src="https://github.com/user-attachments/assets/8e14d4f3-190e-4054-9f2d-a1565d0d9027" />
+
 
 
 # Verify connectivity
+
+Finally I pinged each host from PC1 to verify connectivity, which was ok. Now I have modified OSPF hello and dead intervals and modified bandwidth to change router for packets in OSPF setup. 
 
 
