@@ -58,4 +58,17 @@ Finally I veriefied connectivity by pinging the server from PC1, PC2 and PC3.
 
 # Verify connectivity 
 
+PC1
+<img width="699" height="707" alt="image" src="https://github.com/user-attachments/assets/3674b8e3-c5a8-43a2-b6e9-8a5ad0c2a464" />
+
+PC2
+<img width="699" height="711" alt="image" src="https://github.com/user-attachments/assets/69a276c2-b126-4593-b65d-0a3c2c7de0d5" />
+
+PC3
+<img width="700" height="713" alt="image" src="https://github.com/user-attachments/assets/9b34c802-6513-4aa0-8258-cd549b9bcbef" />
+
+
+
+
+
 
