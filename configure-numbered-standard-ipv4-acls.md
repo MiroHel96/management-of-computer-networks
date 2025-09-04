@@ -21,6 +21,14 @@ After that
 
 # Configure and apply a numbered standard ACL on R2
 
+The following network policies are implemented on R2:
+
+·         The 192.168.11.0/24 network is not allowed access to the WebServer on the 192.168.20.0/24 network.
+
+·         All other access is permitted.
+
+To restrict access from the 192.168.11.0/24 network to the WebServer at 192.168.20.254 without interfering with other traffic, an ACL must be created on R2. The access list must be placed on the outbound interface to the WebServer. A second rule must be created on R2 to permit all other traffic. - Cisco Packet Tracer.
+
 ## Router 2 numbered standard ACL
 
 First task was to create an ACL rule for R2. Devices from network 192.168.11.0 /24 should not be able to access WebServer in network 192.168.20.0/24. 
@@ -47,6 +55,12 @@ Out in the final command means that outbound traffic is effected on the interfac
 
 ## Router 3 numbered standard ACL
 
+The following network policies are implemented on R3:
 
+·         The 192.168.10.0/24 network is not allowed to communicate with the 192.168.30.0/24 network.
+
+·         All other access is permitted.
+
+To restrict access from the 192.168.10.0/24 network to the 192.168.30/24 network without interfering with other traffic, an access list will need to be created on R3. The ACL must be placed on the outbound interface to PC3. A second rule must be created on R3 to permit all other traffic. - Cisco Packet Tracer.
 
 
