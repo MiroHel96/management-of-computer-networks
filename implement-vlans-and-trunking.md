@@ -23,16 +23,43 @@ I started from SWB.
 
 <img width="631" height="314" alt="image" src="https://github.com/user-attachments/assets/dad4d6e0-c018-4d85-bbb5-e6600b472f39" />
 
-After configuring VLANs IDs and names, I configured correct interfaces and VLAN IDs for themm.
+# Part 2 Assign Ports to VLANs
+
+After configuring VLANs and names for them, I configured correct interfaces and VLAN for themm.
 
 <img width="634" height="397" alt="image" src="https://github.com/user-attachments/assets/aef49390-0d79-4d12-a1bb-04a66bf14387" />
 
 <img width="633" height="316" alt="image" src="https://github.com/user-attachments/assets/b47f6594-d91a-4bdc-a6a2-805f7b684c9c" />
 
+I did same steps for SWC as for SWB. I also configured voice for FastEthernet0/4 for SWC.
 
-# Part 2 Assign Ports to VLANs
+<img width="642" height="382" alt="image" src="https://github.com/user-attachments/assets/ee8c6f3c-51cb-4756-b5a1-0518e37bc3a9" />
 
+<img width="638" height="349" alt="image" src="https://github.com/user-attachments/assets/5e1d12ac-17b7-48af-b344-5e4407b98149" />
+
+After configuring voice for SWC I had to configure virtual management interfaces for each switch. 
+
+Configuration for SWA.
+<img width="634" height="203" alt="image" src="https://github.com/user-attachments/assets/e7e7842a-c6e4-4152-ad22-677c2b53db00" />
+
+I did the same configurations for SWB and SWC and used correct IP addresses from the Addressing table.
 
 # Part 3 Configure Static Trunking 
+
+Next I configured static Trunking for connection between SWA and SWB. I also disabled dynamic trunking from that port. 
+
+<img width="637" height="285" alt="image" src="https://github.com/user-attachments/assets/9c2425b1-edf6-46d1-9187-4421727f1555" />
+
+Disabling dynamic trunking
+<img width="631" height="71" alt="image" src="https://github.com/user-attachments/assets/24077d98-d42e-42af-acf0-6c2831329722" />
+
+After that I did same cofigurations for SWA and finally I configured the trunk to use native VLAN.
+
+<img width="637" height="156" alt="image" src="https://github.com/user-attachments/assets/ce28dfae-375a-4d10-814e-cf5b9b955fb2" />
+
+When both switches have the same settings Native VLAN issues are eliminated. 
+
+<img width="631" height="420" alt="image" src="https://github.com/user-attachments/assets/3db1e71b-11b7-41aa-9fab-043e14c13e86" />
+
 
 # Part 4 Configuire Dynamic Trunking 
