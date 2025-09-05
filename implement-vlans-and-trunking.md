@@ -68,6 +68,12 @@ Final part of this excersise was to configure dynamic trunking for SWA and SWC. 
 
 <img width="631" height="340" alt="image" src="https://github.com/user-attachments/assets/1547f1c0-38ad-4ff4-afde-222e8a3e79bf" />
 
+After that everyting was configured as expected, but I forgot to configure VLANs for SWA. I did that and finally my score was 100% 
+
+<img width="637" height="355" alt="image" src="https://github.com/user-attachments/assets/21382718-7ab9-46c1-9cd7-66854e1a7258" />
+
+
+<img width="583" height="268" alt="image" src="https://github.com/user-attachments/assets/232970f7-2940-48ba-9224-9780f9a39b8d" />
 
 
 
