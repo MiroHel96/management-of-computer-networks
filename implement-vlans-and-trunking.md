@@ -63,3 +63,11 @@ When both switches have the same settings Native VLAN issues are eliminated.
 
 
 # Part 4 Configuire Dynamic Trunking 
+
+Final part of this excersise was to configure dynamic trunking for SWA and SWC. According to the excersise I can assume that SWC is setr to the default DTP mode for 2960 swtiches. So therefore I only configure SWA with dynamic trunking mode. I was not sure should I use auto or desirable but desirable was the correct for this one. 
+
+<img width="631" height="340" alt="image" src="https://github.com/user-attachments/assets/1547f1c0-38ad-4ff4-afde-222e8a3e79bf" />
+
+
+
+
