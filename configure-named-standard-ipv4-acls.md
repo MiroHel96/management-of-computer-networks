@@ -44,3 +44,9 @@ After creating the ACL I must now apply it to the corrext interface which is Fas
 
 <img width="922" height="184" alt="image" src="https://github.com/user-attachments/assets/953dbc76-9363-43bf-ab55-d2e25b31668e" />
 
+Now when pinging File Server from PC0 the destination host is unreachable. 
+
+<img width="1396" height="1400" alt="image" src="https://github.com/user-attachments/assets/4088e27e-196c-4532-80f2-2d9b4c5d0f40" />
+
+
+
