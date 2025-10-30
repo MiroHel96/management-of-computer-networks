@@ -30,6 +30,40 @@ From the addressing table the following information is missing:
 
   <img width="701" height="701" alt="image" src="https://github.com/user-attachments/assets/43e943e8-da6e-4203-ba89-e65f0f2722f9" />
   
+## Use CDP to Discover Neighboring Devices 
+
+After logging in to the Remote Branch Office, I issued the following command `show cdp` to see if CDP is enabled. It was not according to the output.
+
+<img width="640" height="78" alt="image" src="https://github.com/user-attachments/assets/58ad2c6e-d1c9-4298-895d-19d90e85bd11" />
+
+Next I had to turn on CPD. I opened routers configuration mode with the command `configure terminal`. I needed issued command `cdp run` to enable cpd to run it globally on all supported interfaces. 
+
+<img width="640" height="73" alt="image" src="https://github.com/user-attachments/assets/8e31aece-4c82-40af-bf8a-467c5fa73f9d" />
+
+I only wanted to broadcast CDP information to the Remote Branch Office network so I disabled CDP messages from interface `serial 0/0/1`. 
+
+<img width="629" height="145" alt="image" src="https://github.com/user-attachments/assets/dba653db-a71f-4a01-a9ac-b06781d0f38e" />
+
+
+## Verifying CDP
+
+As we can see CDP is no active and sending packets. 
+
+Command `show cdp`
+
+<img width="629" height="84" alt="image" src="https://github.com/user-attachments/assets/0c0497e0-b18a-4e11-a490-cbddb53249b5" />
+
+Command `show cdp neighbors`
+
+<img width="634" height="100" alt="image" src="https://github.com/user-attachments/assets/a861d936-622a-457a-89fc-58257d7e1a38" />
+
+Command `show cdp neighbors detail`
+
+<img width="628" height="287" alt="image" src="https://github.com/user-attachments/assets/9e04be5c-feb9-4c67-b1ea-8307d521c1c9" />
+
+
+As we can see neigboring device is Branch Networks Firewall. 
+
 
 
 
