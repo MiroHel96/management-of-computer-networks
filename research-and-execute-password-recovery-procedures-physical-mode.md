@@ -26,3 +26,15 @@ Configuration register values and their meanings:
 - 0x2142 - is a value that ignores the startup configuration, bootsd from the IOS image in flash, ingnores or skips saved configurations and is used for troubleshooting and password recovery. 
 
 
+## Password recovery documented in Cisco Packet Tracer
+
+1. I connect to the router using terminal from the laptop.
+2. Turn off the router from the powerswitch.
+3. Open the terminal connection and quickl press `CTRL-c` or type `ALT-b`, before the router finishes loading to access ROMMON mode.
+
+As we can see from the picture I have now enabled ROMMON mode in the router. 
+
+<img width="697" height="710" alt="image" src="https://github.com/user-attachments/assets/664d270d-539b-4493-8097-a6d9cc7b7783" />
+
+
+
