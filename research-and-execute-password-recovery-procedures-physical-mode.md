@@ -51,4 +51,19 @@ Next I copied the running configuration to startup configuration. After that I c
 
 <img width="638" height="283" alt="image" src="https://github.com/user-attachments/assets/8dfaa8af-9e17-405f-b77b-8ab8bd44789c" />
 
+Next I configured the following settings for the router. 
+- hostname `Branch`
+- password `branch1`
+- console vty line passsword `brach2`
+- banner `Password Recovered`
+
+<img width="631" height="102" alt="image" src="https://github.com/user-attachments/assets/5d5067a7-ffad-4de7-a7b1-625b4f8c7c63" />
+
+<img width="601" height="103" alt="image" src="https://github.com/user-attachments/assets/db3842cd-552b-4529-8815-06b21f5c674f" />
+
+<img width="628" height="187" alt="image" src="https://github.com/user-attachments/assets/29dbf4fe-e7e5-468d-a98c-ad24842d0620" />
+
+
+
+  
 
