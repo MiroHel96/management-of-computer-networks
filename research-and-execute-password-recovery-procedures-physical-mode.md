@@ -40,7 +40,13 @@ Next I issued following commands to ignore the startupconfiguration and to acces
 - `confreg 0x2142` , modiefies the configuration register to "safemode".
 - `reset` - resets the router and allows me on enter to initial configuration mode if needed.
 
+I entered `N` to not enter the initial configuration mode. 
+
 <img width="634" height="59" alt="image" src="https://github.com/user-attachments/assets/4660eb06-50dc-4ccf-800d-f10e1a133da4" />
 
 <img width="699" height="714" alt="image" src="https://github.com/user-attachments/assets/f6697ce7-fce6-409b-afd0-737788244630" />
 
+
+Next I copied the running configuarion to startup configuration. After that I continued to change the routers passwords.
+
+<img width="638" height="283" alt="image" src="https://github.com/user-attachments/assets/8dfaa8af-9e17-405f-b77b-8ab8bd44789c" />
