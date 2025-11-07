@@ -36,5 +36,10 @@ As we can see from the picture I have now enabled ROMMON mode in the router.
 
 <img width="697" height="710" alt="image" src="https://github.com/user-attachments/assets/664d270d-539b-4493-8097-a6d9cc7b7783" />
 
+Next I issued following commands to ignore the startupconfiguration and to access the initial configuration. 
+- `confreg 0x2142` , modiefies the configuration register to "safemode".
+- `reset` - resets the router and allows me on enter to initial configuration mode
+
+<img width="634" height="59" alt="image" src="https://github.com/user-attachments/assets/4660eb06-50dc-4ccf-800d-f10e1a133da4" />
 
 
