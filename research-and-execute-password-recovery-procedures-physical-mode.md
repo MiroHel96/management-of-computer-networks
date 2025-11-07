@@ -47,6 +47,8 @@ I entered `N` to not enter the initial configuration mode.
 <img width="699" height="714" alt="image" src="https://github.com/user-attachments/assets/f6697ce7-fce6-409b-afd0-737788244630" />
 
 
-Next I copied the running configuarion to startup configuration. After that I continued to change the routers passwords.
+Next I copied the running configuration to startup configuration. After that I continued to change the routers passwords.
 
 <img width="638" height="283" alt="image" src="https://github.com/user-attachments/assets/8dfaa8af-9e17-405f-b77b-8ab8bd44789c" />
+
+
