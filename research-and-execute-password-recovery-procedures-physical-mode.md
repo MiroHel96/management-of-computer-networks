@@ -10,13 +10,19 @@ Router model in this activity:
 Some questions and answers: 
 
 - What is the purpose of the configuration register?
+    - Is a 16-bit value determining how the router boots, it controls if startup configuration is loaded from NVRAM, boot source (e.g, flash, TFTP, ROMMON) and console speed and other boot time related behaviors
+      
 - What command changes the configuration register in global configuration mode?
+    - With command `config-register 0xXXXX` you can change the configuration register in global configuration mode.
+      
 - What command changes the configuration register in ROMMON mode?
+    - Using command `confreg 0xXXXX` you can change the configuration register in ROMMON mode. 
 
 
 Configuration register values and their meanings: 
 
-- 0x2102
-- 0x2142
+- 0x2102 - is the default value of most Cisco router and it boots from the IOS image in flash, loads startup configuration from NVRAM and is used for normal operation.
+
+- 0x2142 - is a value that ignores the startup configuration, bootsd from the IOS image in flash, ingnores or skips saved configurations and is used for troubleshooting and password recovery. 
 
 
