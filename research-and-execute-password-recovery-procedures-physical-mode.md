@@ -63,6 +63,19 @@ Next I configured the following settings for the router.
 
 <img width="628" height="187" alt="image" src="https://github.com/user-attachments/assets/29dbf4fe-e7e5-468d-a98c-ad24842d0620" />
 
+We can verify that the confreg version is `0x2142` with the command `show version`.
+
+<img width="634" height="215" alt="image" src="https://github.com/user-attachments/assets/b2b6f649-7319-44c2-b9eb-4cbec1a1ae47" />
+
+Next I changed the configruration register version to `0x2102` with the command `config-register 0x2102`. Finally I verified its configuration with `show version` command. 
+
+<img width="634" height="354" alt="image" src="https://github.com/user-attachments/assets/87ad12fe-fedd-49a6-82e6-fd1d82690d61" />
+
+I had to enable interfaces `G0/0` and `G0/2` and after that I reloaded the router. It now asks a password while connecting with console cable. After testing the passwords everyting works as expected. I have now reseted unknown passwords for Cisco Router.
+
+<img width="633" height="547" alt="image" src="https://github.com/user-attachments/assets/9014cf80-e6af-4680-854a-94ff94d050dd" />
+
+<img width="636" height="190" alt="image" src="https://github.com/user-attachments/assets/fb09a9ed-08a8-42e5-bfa3-29aac1cc6b6e" />
 
 
   
