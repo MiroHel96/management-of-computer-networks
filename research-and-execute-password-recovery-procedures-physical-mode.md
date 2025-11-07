@@ -7,7 +7,7 @@ Router model in this activity:
 - Cisco 2911
 
 
-Some questions and answers: 
+Some questions and answers: (Source Microsoft Copilot)
 
 - What is the purpose of the configuration register?
     - Is a 16-bit value determining how the router boots, it controls if startup configuration is loaded from NVRAM, boot source (e.g, flash, TFTP, ROMMON) and console speed and other boot time related behaviors
